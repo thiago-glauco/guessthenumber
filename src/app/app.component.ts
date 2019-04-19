@@ -4,10 +4,10 @@ import { Component } from '@angular/core';
  selector: 'my-app',
  template: `
   <div fxLayout="column" gdGap="10px" class="container">
-      <mat-toolbar fxLayout="column" fxLayoutAlign="center center" >
+      <mat-toolbar fxLayout="column" fxLayoutAlign="center center" color="primary">
         <span>Guess the Number !</span>
       </mat-toolbar >
-      <mat-card fxLayout="column" fxLayoutAlign="center center" class="header_card">
+      <mat-card fxLayout="column" fxLayoutAlign="center center" class="header_card" >
           <mat-card-content fxFlex fxFlex.gt-xs="50%">
             <p class="card-text">Guess the computer generated random number between 1 and 1000.</p>
           </mat-card-content>
@@ -15,6 +15,8 @@ import { Component } from '@angular/core';
       <div fxLayout="row" fxLayoutAlign="center center" gdGap.xs="2px" gdGap.gt-xs="10px" >
          <label gdColumn="1" >Your Guess: </label>
          <input gdColumn="2" type="number" [value]="guess" (input)="guess = $event.target.value" />
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center center" gdGap.xs="2px" gdGap.gt-xs="10px" >
          <button gdColumn="3"  (click)="verifyGuess()" mat-raised-button>Verify</button>
          <button gdColumn="4" (click)="initializeGame()" mat-raised-button>Restart</button>
       </div>
@@ -26,7 +28,7 @@ import { Component } from '@angular/core';
         </mat-card>
       </div>
       <p class="text-info">No of guesses :
-        <button mat-fab color="accent">{{noOfTries}}</button>
+        <button mat-mini-fab color="accent">{{noOfTries}}</button>
       </p>
   </div> 
   `

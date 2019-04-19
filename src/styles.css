@@ -2,7 +2,7 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 .container {
-  min-width: 90%;
+  width: 90%;
   margin: auto;
 }
 
