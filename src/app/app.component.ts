@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
             <p class="card-text">Guess the computer generated random number between 1 and 1000.</p>
           </mat-card-content>
       </mat-card>
-      <div fxLayout="row" fxLayoutAlign="center center" gdGap.xs="5px" gdGap.gt-xs="10px" >
+      <div fxLayout="row" fxLayoutAlign="center center" gdGap.xs="2px" gdGap.gt-xs="10px" >
          <label gdColumn="1" >Your Guess: </label>
          <input gdColumn="2" type="number" [value]="guess" (input)="guess = $event.target.value" />
          <button gdColumn="3"  (click)="verifyGuess()" mat-raised-button>Verify</button>
