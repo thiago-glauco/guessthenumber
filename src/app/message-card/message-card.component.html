@@ -1,0 +1,5 @@
+<mat-card fxLayout="column" fxLayoutAlign="start center" class="header_card">
+  <p fxFill *ngIf="deviation<0" class="warning">Your guess is higher.</p>
+  <p fxFill *ngIf="deviation>0" class="warning">Your guess is lower.</p>
+  <p fxFill *ngIf="deviation===0" class="success">Yes! That's it.</p>
+</mat-card>

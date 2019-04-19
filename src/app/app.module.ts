@@ -10,6 +10,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { MessageCardComponent } from './message-card/message-card.component';
 
 @NgModule({
   imports:      [
@@ -22,7 +23,7 @@ import { HelloComponent } from './hello.component';
     MatToolbarModule,
     MatBadgeModule
     ],
-  declarations: [ AppComponent, HelloComponent ],
+  declarations: [ AppComponent, HelloComponent, MessageCardComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

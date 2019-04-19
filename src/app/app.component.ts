@@ -21,11 +21,7 @@ import { Component } from '@angular/core';
          <button gdColumn="4" (click)="initializeGame()" mat-raised-button>Restart</button>
       </div>
       <div>
-        <mat-card fxLayout="column" fxLayoutAlign="start center" class="header_card">
-         <p fxFill *ngIf="deviation<0" class="warning">Your guess is higher.</p>
-         <p fxFill *ngIf="deviation>0" class="warning">Your guess is lower.</p>
-         <p fxFill *ngIf="deviation===0" class="success">Yes! That's it.</p>
-        </mat-card>
+        <app-message-card [deviation]="deviation"></app-message-card>
       </div>
       <p class="text-info">No of guesses :
         <button mat-mini-fab color="accent">{{noOfTries}}</button>
