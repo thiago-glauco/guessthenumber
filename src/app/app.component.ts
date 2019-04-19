@@ -23,7 +23,7 @@ import { Component } from '@angular/core';
       <div>
         <app-message-card [deviation]="deviation"></app-message-card>
       </div>
-      <p class="text-info">No of guesses :
+      <p>No of guesses :
         <button mat-mini-fab color="accent">{{noOfTries}}</button>
       </p>
   </div> 
