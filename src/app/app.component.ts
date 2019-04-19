@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
  selector: 'my-app',
  template: `
   <div fxLayout="column" gdGap="10px" class="container">
-      <mat-toolbar fxLayout="column" fxLayoutAlign="center center" color="primary">
+      <mat-toolbar fxLayout="column" fxLayoutAlign="center center" color="accent">
         <span>Guess the Number !</span>
       </mat-toolbar >
       <mat-card fxLayout="column" fxLayoutAlign="center center" class="header_card" >
